@@ -1,0 +1,536 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps_1": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "annsar_sharedcommondataserviceforapps_3e609"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_sharepointonline": {
+        "runtimeSource": "invoker",
+        "connection": {
+          "connectionReferenceLogicalName": "annsar_sharedsharepointonline_48af0"
+        },
+        "api": {
+          "name": "shared_sharepointonline"
+        }
+      },
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "annsar_sharedcommondataserviceforapps_5fafb"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "26c25f17-584b-4480-92dd-2c1fb5fbbf52"
+          },
+          "type": "Request",
+          "kind": "PowerAppV2",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "file": {
+                  "title": "File Content",
+                  "type": "object",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please select file or image",
+                  "x-ms-content-hint": "FILE",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "contentBytes": {
+                      "type": "string",
+                      "format": "byte"
+                    }
+                  }
+                },
+                "text": {
+                  "title": "File Name",
+                  "type": "string",
+                  "x-ms-dynamically-added": true,
+                  "description": "Please enter your input",
+                  "x-ms-content-hint": "TEXT"
+                }
+              },
+              "required": [
+                "text"
+              ]
+            }
+          }
+        }
+      },
+      "actions": {
+        "Classify_text_into_categories_with_one_of_your_custom_models": {
+          "runAfter": {
+            "Warunek": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "51d56b33-437c-47dc-8c2b-8160aed24af0",
+            "flowSystemMetadata": {
+              "portalOperationId": "aibuilderpredict_textclassification",
+              "portalOperationGroup": "aibuilder",
+              "portalOperationApiDisplayNameOverride": "AI Builder",
+              "portalOperationIconOverride": "https://content.powerapps.com/resource/makerx/static/pauto/images/designeroperations/aiBuilderNew.51dbdb6b.png",
+              "portalOperationBrandColorOverride": "#0A76C4",
+              "portalOperationApiTierOverride": "Standard"
+            }
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps_1",
+              "operationId": "aibuilderpredict_textclassification",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "recordId": "89945276-b909-4552-984b-c831ba337751",
+              "item/requestv2/text": "@variables('string')",
+              "item/requestv2/language": "Wykryj automatycznie"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Compose": {
+          "runAfter": {
+            "Warunek_2": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "fcb2a481-c199-4511-8131-f0da3d0169e2"
+          },
+          "type": "Compose",
+          "inputs": "@variables('textContent')"
+        },
+        "Create_file": {
+          "runAfter": {
+            "Warunek_3": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "5e86658f-5028-46eb-a8b3-6a22808b3e39"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "CreateFile",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://utpedupl.sharepoint.com/sites/KategoryzacjaAI",
+              "folderPath": "/Shared Documents",
+              "name": "@triggerBody()['text']",
+              "body": "@triggerBody()['file']['contentBytes']"
+            },
+            "authentication": "@parameters('$authentication')"
+          },
+          "runtimeConfiguration": {
+            "contentTransfer": {
+              "transferMode": "Chunked"
+            }
+          }
+        },
+        "Create_text_with_GPT_using_a_prompt": {
+          "runAfter": {
+            "Classify_text_into_categories_with_one_of_your_custom_models": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "e629df0e-4552-4f72-ae63-b02446096c71",
+            "flowSystemMetadata": {
+              "portalOperationId": "aibuilderpredict_customprompt",
+              "portalOperationGroup": "aibuilder",
+              "portalOperationApiDisplayNameOverride": "AI Builder",
+              "portalOperationIconOverride": "https://content.powerapps.com/resource/makerx/static/pauto/images/designeroperations/aiBuilderNew.51dbdb6b.png",
+              "portalOperationBrandColorOverride": "#0A76C4",
+              "portalOperationApiTierOverride": "Standard"
+            }
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "aibuilderpredict_customprompt",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "recordId": "c076eac8-f218-4feb-8ad1-7ee4fb039419",
+              "item/requestv2/inputText": "@variables('string')"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Respond_to_a_Power_App_or_flow": {
+          "runAfter": {
+            "Create_item": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "fcec48c3-4da6-4b74-9099-c5a0dc8433af"
+          },
+          "type": "Response",
+          "kind": "PowerApp",
+          "inputs": {
+            "statusCode": 200,
+            "body": {
+              "category": "@variables('category')"
+            },
+            "schema": {
+              "type": "object",
+              "properties": {
+                "category": {
+                  "title": "Category",
+                  "x-ms-dynamically-added": true,
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "Utwórz_plik": {
+          "runAfter": {
+            "Zastosuj_do_każdego": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "637e7b1e-3f9c-4a67-a089-2583c441f007"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "CreateFile",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://utpedupl.sharepoint.com/sites/KategoryzacjaAI",
+              "folderPath": "/Temp",
+              "name": "@triggerBody()['text']",
+              "body": "@triggerBody()?['file']?['contentBytes']"
+            },
+            "authentication": "@parameters('$authentication')"
+          },
+          "runtimeConfiguration": {
+            "contentTransfer": {
+              "transferMode": "Chunked"
+            }
+          }
+        },
+        "Pobierz_zawartość_pliku": {
+          "runAfter": {
+            "Utwórz_plik": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "2a3f07c3-79be-4c8a-829e-60be9a0a8870"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "GetFileContent",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://utpedupl.sharepoint.com/sites/KategoryzacjaAI",
+              "id": "@outputs('Utwórz_plik')?['body/Id']",
+              "inferContentType": true
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Warunek": {
+          "actions": {
+            "Ustaw_zmienną": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "5ac6cff5-f514-4d8d-9246-40d46385c7e8"
+              },
+              "type": "SetVariable",
+              "inputs": {
+                "name": "textContent",
+                "value": "@{substring(outputs('Compose'),0,5000)}"
+              }
+            }
+          },
+          "runAfter": {
+            "Compose": [
+              "Succeeded"
+            ]
+          },
+          "else": {
+            "actions": {
+              "Ustaw_zmienną_2": {
+                "runAfter": {},
+                "metadata": {
+                  "operationMetadataId": "1378d4ff-4234-4ad8-a394-31742f0f267b"
+                },
+                "type": "SetVariable",
+                "inputs": {
+                  "name": "textContent",
+                  "value": "@{outputs('Compose')}"
+                }
+              }
+            }
+          },
+          "expression": {
+            "greaterOrEquals": [
+              "@length(outputs('Compose'))",
+              5000
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "f5d199df-f2e4-412c-b329-cdc8f7147ccc"
+          },
+          "type": "If"
+        },
+        "Inicjuj_zmienną": {
+          "runAfter": {
+            "Pobierz_zawartość_pliku": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "71a4fdbf-e1dd-4399-8426-041ddb6c7ba9"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "textContent",
+                "type": "string"
+              }
+            ]
+          }
+        },
+        "Warunek_2": {
+          "actions": {
+            "Ustaw_zmienną_4": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "5ac6cff5-f514-4d8d-9246-40d46385c7e8"
+              },
+              "type": "SetVariable",
+              "inputs": {
+                "name": "textContent",
+                "value": "@{body('Pobierz_zawartość_pliku')}"
+              }
+            }
+          },
+          "runAfter": {
+            "Inicjuj_zmienną": [
+              "Succeeded"
+            ]
+          },
+          "else": {
+            "actions": {
+              "Ustaw_zmienną_3": {
+                "runAfter": {},
+                "metadata": {
+                  "operationMetadataId": "1378d4ff-4234-4ad8-a394-31742f0f267b"
+                },
+                "type": "SetVariable",
+                "inputs": {
+                  "name": "textContent",
+                  "value": "@{decodeBase64(body('Pobierz_zawartość_pliku')['$content'])}"
+                }
+              }
+            }
+          },
+          "expression": {
+            "contains": [
+              "@triggerBody()['text']",
+              ".txt"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "f5d199df-f2e4-412c-b329-cdc8f7147ccc"
+          },
+          "type": "If"
+        },
+        "Rozpoznaj_tekst_na_obrazie_lub_w_dokumencie_PDF": {
+          "runAfter": {
+            "Inicjuj_zmienną_3": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "a0d0a836-02ba-4724-aefd-82b2d21513ed",
+            "flowSystemMetadata": {
+              "portalOperationId": "aibuilderpredict_textrecognition",
+              "portalOperationGroup": "aibuilder",
+              "portalOperationApiDisplayNameOverride": "AI Builder",
+              "portalOperationIconOverride": "https://content.powerapps.com/resource/makerx/static/pauto/images/designeroperations/aiBuilderNew.51dbdb6b.png",
+              "portalOperationBrandColorOverride": "#0A76C4",
+              "portalOperationApiTierOverride": "Standard"
+            }
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "aibuilderpredict_textrecognition",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "item/requestv2/base64Encoded": "@triggerBody()?['file']?['contentBytes']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Inicjuj_zmienną_2": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "b581cbcd-dc02-4780-aa84-48b5250b8b26"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "string",
+                "type": "string"
+              }
+            ]
+          }
+        },
+        "Zastosuj_do_każdego": {
+          "foreach": "@first(outputs('Rozpoznaj_tekst_na_obrazie_lub_w_dokumencie_PDF')?['body/responsev2/predictionOutput/results'])['lines']",
+          "actions": {
+            "Dołącz_do_zmiennej_ciągu": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "5860cb54-6a5b-4e76-81c4-5389be0c595a"
+              },
+              "type": "AppendToStringVariable",
+              "inputs": {
+                "name": "string",
+                "value": "@items('Zastosuj_do_każdego')['text']"
+              }
+            }
+          },
+          "runAfter": {
+            "Rozpoznaj_tekst_na_obrazie_lub_w_dokumencie_PDF": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "876caa07-715f-422d-8a31-a7ed066bad3a"
+          },
+          "type": "Foreach"
+        },
+        "Create_item": {
+          "runAfter": {
+            "Create_file": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "f9c084c6-75f5-4c93-9192-03b06a9a46eb"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sharepointonline",
+              "operationId": "PostItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            },
+            "parameters": {
+              "dataset": "https://utpedupl.sharepoint.com/sites/KategoryzacjaAI",
+              "table": "ae843e04-6b0f-400b-b0f1-ee6099b0b2c9",
+              "item/Title": "@triggerBody()['text']",
+              "item/Kategoria": "@variables('category')",
+              "item/Link": "https://utpedupl.sharepoint.com/sites/KategoryzacjaAI/Shared%20Documents/@{triggerBody()['text']}",
+              "item/Podsumowanie": "@outputs('Create_text_with_GPT_using_a_prompt')?['body/responsev2/predictionOutput/text']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Inicjuj_zmienną_3": {
+          "runAfter": {
+            "Inicjuj_zmienną_2": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "6221c48e-4d6a-40d2-be6d-683a4d940e7e"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "category",
+                "type": "string",
+                "value": "Other"
+              }
+            ]
+          }
+        },
+        "Warunek_3": {
+          "actions": {
+            "Ustaw_zmienną_5": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "ebfc6ecc-7af7-434f-b381-14521a2b0b4a"
+              },
+              "type": "SetVariable",
+              "inputs": {
+                "name": "category",
+                "value": "@{first(outputs('Classify_text_into_categories_with_one_of_your_custom_models')?['body/responsev2/predictionOutput/results'])['type']}"
+              }
+            }
+          },
+          "runAfter": {
+            "Create_text_with_GPT_using_a_prompt": [
+              "Succeeded"
+            ]
+          },
+          "expression": {
+            "greater": [
+              "@length(outputs('Classify_text_into_categories_with_one_of_your_custom_models')?['body/responsev2/predictionOutput/results'])",
+              0
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "6c781a5c-2f60-4c42-a9ce-6edd7a2fc41d"
+          },
+          "type": "If"
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

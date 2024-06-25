@@ -1,0 +1,1652 @@
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Entities>
+    <Entity>
+      <Name LocalizedName="Kategoryzacja AI" OriginalName="Kategoryzacja AI">annsar_KategoryzacjaAI</Name>
+      <EntityInfo>
+        <entity Name="annsar_KategoryzacjaAI">
+          <LocalizedNames>
+            <LocalizedName description="Kategoryzacja AI" languagecode="1045" />
+          </LocalizedNames>
+          <LocalizedCollectionNames>
+            <LocalizedCollectionName description="KategoryzacjaAI" languagecode="1045" />
+          </LocalizedCollectionNames>
+          <Descriptions>
+            <Description description="" languagecode="1045" />
+          </Descriptions>
+          <attributes>
+            <attribute PhysicalName="annsar_KategoryzacjaAIId">
+              <Type>primarykey</Type>
+              <Name>annsar_kategoryzacjaaiid</Name>
+              <LogicalName>annsar_kategoryzacjaaiid</LogicalName>
+              <RequiredLevel>systemrequired</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|RequiredForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>0</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>1</IsFilterable>
+              <IsRetrievable>1</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <displaynames>
+                <displayname description="Kategoryzacja AI" languagecode="1045" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unikatowy identyfikator wystąpień encji" languagecode="1045" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="annsar_Name">
+              <Type>nvarchar</Type>
+              <Name>annsar_name</Name>
+              <LogicalName>annsar_name</LogicalName>
+              <RequiredLevel>required</RequiredLevel>
+              <DisplayMask>PrimaryName|ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>1</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>1</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>text</Format>
+              <MaxLength>100</MaxLength>
+              <Length>200</Length>
+              <displaynames>
+                <displayname description="Name" languagecode="1045" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1045" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="annsar_Text">
+              <Type>ntext</Type>
+              <Name>annsar_text</Name>
+              <LogicalName>annsar_text</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>text</Format>
+              <MaxLength>1048576</MaxLength>
+              <displaynames>
+                <displayname description="Text" languagecode="1045" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1045" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="CreatedBy">
+              <Type>lookup</Type>
+              <Name>createdby</Name>
+              <LogicalName>createdby</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Utworzony przez" languagecode="1045" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unikatowy identyfikator użytkownika, który utworzył rekord." languagecode="1045" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="CreatedOn">
+              <Type>datetime</Type>
+              <Name>createdon</Name>
+              <LogicalName>createdon</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>inactive</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>1</IsFilterable>
+              <IsRetrievable>1</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>datetime</Format>
+              <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
+              <Behavior>1</Behavior>
+              <displaynames>
+                <displayname description="Data utworzenia" languagecode="1045" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Data i godzina utworzenia rekordu." languagecode="1045" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="CreatedOnBehalfBy">
+              <Type>lookup</Type>
+              <Name>createdonbehalfby</Name>
+              <LogicalName>createdonbehalfby</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Utworzone przez (delegat)" languagecode="1045" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unikatowy identyfikator użytkownika delegowanego, który utworzył rekord." languagecode="1045" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="ImportSequenceNumber">
+              <Type>int</Type>
+              <Name>importsequencenumber</Name>
+              <LogicalName>importsequencenumber</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind</DisplayMask>
+              <ImeMode>disabled</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format></Format>
+              <MinValue>-2147483648</MinValue>
+              <MaxValue>2147483647</MaxValue>
+              <displaynames>
+                <displayname description="Numer sekwencji importu" languagecode="1045" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Numer sekwencyjny operacji importu, w wyniku której został utworzony ten rekord." languagecode="1045" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="ModifiedBy">
+              <Type>lookup</Type>
+              <Name>modifiedby</Name>
+              <LogicalName>modifiedby</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Zmodyfikowane przez" languagecode="1045" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unikatowy identyfikator użytkownika, który zmodyfikował rekord." languagecode="1045" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="ModifiedOn">
+              <Type>datetime</Type>
+              <Name>modifiedon</Name>
+              <LogicalName>modifiedon</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>inactive</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>1</IsFilterable>
+              <IsRetrievable>1</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>datetime</Format>
+              <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
+              <Behavior>1</Behavior>
+              <displaynames>
+                <displayname description="Data modyfikacji" languagecode="1045" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Data i godzina modyfikacji rekordu." languagecode="1045" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="ModifiedOnBehalfBy">
+              <Type>lookup</Type>
+              <Name>modifiedonbehalfby</Name>
+              <LogicalName>modifiedonbehalfby</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Zmodyfikowane przez (delegat)" languagecode="1045" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unikatowy identyfikator użytkownika delegowanego, który zmodyfikował rekord." languagecode="1045" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="OverriddenCreatedOn">
+              <Type>datetime</Type>
+              <Name>overriddencreatedon</Name>
+              <LogicalName>overriddencreatedon</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForGrid</DisplayMask>
+              <ImeMode>inactive</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>date</Format>
+              <CanChangeDateTimeBehavior>0</CanChangeDateTimeBehavior>
+              <Behavior>1</Behavior>
+              <displaynames>
+                <displayname description="Data utworzenia rekordu" languagecode="1045" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Data i godzina migracji rekordu." languagecode="1045" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="OwnerId">
+              <Type>owner</Type>
+              <Name>ownerid</Name>
+              <LogicalName>ownerid</LogicalName>
+              <RequiredLevel>systemrequired</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>1</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes>
+                <LookupType id="00000000-0000-0000-0000-000000000000">8</LookupType>
+                <LookupType id="00000000-0000-0000-0000-000000000000">9</LookupType>
+              </LookupTypes>
+              <displaynames>
+                <displayname description="Właściciel" languagecode="1045" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Identyfikator właściciela" languagecode="1045" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="OwningBusinessUnit">
+              <Type>lookup</Type>
+              <Name>owningbusinessunit</Name>
+              <LogicalName>owningbusinessunit</LogicalName>
+              <RequiredLevel>systemrequired</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>1</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Jednostka biznesowa — właściciel" languagecode="1045" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unikatowy identyfikator jednostki biznesowej, która jest właścicielem rekordu" languagecode="1045" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="OwningTeam">
+              <Type>lookup</Type>
+              <Name>owningteam</Name>
+              <LogicalName>owningteam</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsLogical>1</IsLogical>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Zespół będący właścicielem" languagecode="1045" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unikatowy identyfikator zespołu, który jest właścicielem rekordu." languagecode="1045" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="OwningUser">
+              <Type>lookup</Type>
+              <Name>owninguser</Name>
+              <LogicalName>owninguser</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>0</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsLogical>1</IsLogical>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <LookupStyle>single</LookupStyle>
+              <LookupTypes />
+              <displaynames>
+                <displayname description="Użytkownik-właściciel" languagecode="1045" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Unikatowy identyfikator użytkownika, który jest właścicielem rekordu." languagecode="1045" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="statecode">
+              <Type>state</Type>
+              <Name>statecode</Name>
+              <LogicalName>statecode</LogicalName>
+              <RequiredLevel>systemrequired</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>0</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>1</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <optionset Name="annsar_kategoryzacjaai_statecode">
+                <OptionSetType>state</OptionSetType>
+                <IntroducedVersion>1.0</IntroducedVersion>
+                <IsCustomizable>1</IsCustomizable>
+                <displaynames>
+                  <displayname description="Stan" languagecode="1045" />
+                </displaynames>
+                <Descriptions>
+                  <Description description="Stan elementu/elementów Kategoryzacja AI" languagecode="1045" />
+                </Descriptions>
+                <states>
+                  <state value="0" defaultstatus="1" invariantname="Active">
+                    <labels>
+                      <label description="Aktywne" languagecode="1045" />
+                    </labels>
+                  </state>
+                  <state value="1" defaultstatus="2" invariantname="Inactive">
+                    <labels>
+                      <label description="Nieaktywne" languagecode="1045" />
+                    </labels>
+                  </state>
+                </states>
+              </optionset>
+              <displaynames>
+                <displayname description="Stan" languagecode="1045" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Stan elementu/elementów Kategoryzacja AI" languagecode="1045" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="statuscode">
+              <Type>status</Type>
+              <Name>statuscode</Name>
+              <LogicalName>statuscode</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <optionset Name="annsar_kategoryzacjaai_statuscode">
+                <OptionSetType>status</OptionSetType>
+                <IntroducedVersion>1.0</IntroducedVersion>
+                <IsCustomizable>1</IsCustomizable>
+                <displaynames>
+                  <displayname description="Przyczyna stanu" languagecode="1045" />
+                </displaynames>
+                <Descriptions>
+                  <Description description="Przyczyna stanu elementu/elementów Kategoryzacja AI" languagecode="1045" />
+                </Descriptions>
+                <statuses>
+                  <status value="1" state="0">
+                    <labels>
+                      <label description="Aktywne" languagecode="1045" />
+                    </labels>
+                  </status>
+                  <status value="2" state="1">
+                    <labels>
+                      <label description="Nieaktywne" languagecode="1045" />
+                    </labels>
+                  </status>
+                </statuses>
+              </optionset>
+              <displaynames>
+                <displayname description="Przyczyna stanu" languagecode="1045" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Przyczyna stanu elementu/elementów Kategoryzacja AI" languagecode="1045" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="TimeZoneRuleVersionNumber">
+              <Type>int</Type>
+              <Name>timezoneruleversionnumber</Name>
+              <LogicalName>timezoneruleversionnumber</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format></Format>
+              <MinValue>-1</MinValue>
+              <MaxValue>2147483647</MaxValue>
+              <displaynames>
+                <displayname description="Numer wersji reguły strefy czasowej" languagecode="1045" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Tylko do użytku wewnętrznego." languagecode="1045" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="UTCConversionTimeZoneCode">
+              <Type>int</Type>
+              <Name>utcconversiontimezonecode</Name>
+              <LogicalName>utcconversiontimezonecode</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>0</IsCustomField>
+              <IsAuditEnabled>0</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format></Format>
+              <MinValue>-1</MinValue>
+              <MaxValue>2147483647</MaxValue>
+              <displaynames>
+                <displayname description="Kod strefy czasowej do konwersji czasu UTC" languagecode="1045" />
+              </displaynames>
+              <Descriptions>
+                <Description description="Kod strefy czasowej używanej podczas tworzenia rekordu." languagecode="1045" />
+              </Descriptions>
+            </attribute>
+          </attributes>
+          <EntitySetName>annsar_kategoryzacjaais</EntitySetName>
+          <IsDuplicateCheckSupported>1</IsDuplicateCheckSupported>
+          <IsBusinessProcessEnabled>0</IsBusinessProcessEnabled>
+          <IsRequiredOffline>0</IsRequiredOffline>
+          <IsInteractionCentricEnabled>0</IsInteractionCentricEnabled>
+          <IsCollaboration>0</IsCollaboration>
+          <AutoRouteToOwnerQueue>0</AutoRouteToOwnerQueue>
+          <IsConnectionsEnabled>0</IsConnectionsEnabled>
+          <IsDocumentManagementEnabled>0</IsDocumentManagementEnabled>
+          <AutoCreateAccessTeams>0</AutoCreateAccessTeams>
+          <IsOneNoteIntegrationEnabled>0</IsOneNoteIntegrationEnabled>
+          <IsKnowledgeManagementEnabled>0</IsKnowledgeManagementEnabled>
+          <IsSLAEnabled>0</IsSLAEnabled>
+          <IsDocumentRecommendationsEnabled>0</IsDocumentRecommendationsEnabled>
+          <IsBPFEntity>0</IsBPFEntity>
+          <OwnershipTypeMask>UserOwned</OwnershipTypeMask>
+          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsRetrieveAuditEnabled>0</IsRetrieveAuditEnabled>
+          <IsRetrieveMultipleAuditEnabled>0</IsRetrieveMultipleAuditEnabled>
+          <IsActivity>0</IsActivity>
+          <ActivityTypeMask></ActivityTypeMask>
+          <IsActivityParty>0</IsActivityParty>
+          <IsReplicated>0</IsReplicated>
+          <IsReplicationUserFiltered>0</IsReplicationUserFiltered>
+          <IsMailMergeEnabled>1</IsMailMergeEnabled>
+          <IsVisibleInMobile>0</IsVisibleInMobile>
+          <IsVisibleInMobileClient>0</IsVisibleInMobileClient>
+          <IsReadOnlyInMobileClient>0</IsReadOnlyInMobileClient>
+          <IsOfflineInMobileClient>0</IsOfflineInMobileClient>
+          <DaysSinceRecordLastModified>0</DaysSinceRecordLastModified>
+          <MobileOfflineFilters></MobileOfflineFilters>
+          <IsMapiGridEnabled>1</IsMapiGridEnabled>
+          <IsReadingPaneEnabled>1</IsReadingPaneEnabled>
+          <IsQuickCreateEnabled>0</IsQuickCreateEnabled>
+          <SyncToExternalSearchIndex>0</SyncToExternalSearchIndex>
+          <IntroducedVersion>1.0</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <IsMappable>1</IsMappable>
+          <CanModifyAuditSettings>1</CanModifyAuditSettings>
+          <CanModifyMobileVisibility>1</CanModifyMobileVisibility>
+          <CanModifyMobileClientVisibility>1</CanModifyMobileClientVisibility>
+          <CanModifyMobileClientReadOnly>1</CanModifyMobileClientReadOnly>
+          <CanModifyMobileClientOffline>1</CanModifyMobileClientOffline>
+          <CanModifyConnectionSettings>1</CanModifyConnectionSettings>
+          <CanModifyDuplicateDetectionSettings>1</CanModifyDuplicateDetectionSettings>
+          <CanModifyMailMergeSettings>1</CanModifyMailMergeSettings>
+          <CanModifyQueueSettings>1</CanModifyQueueSettings>
+          <CanCreateAttributes>1</CanCreateAttributes>
+          <CanCreateForms>1</CanCreateForms>
+          <CanCreateCharts>1</CanCreateCharts>
+          <CanCreateViews>1</CanCreateViews>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <CanEnableSyncToExternalSearchIndex>1</CanEnableSyncToExternalSearchIndex>
+          <EnforceStateTransitions>0</EnforceStateTransitions>
+          <CanChangeHierarchicalRelationship>1</CanChangeHierarchicalRelationship>
+          <EntityHelpUrlEnabled>0</EntityHelpUrlEnabled>
+          <ChangeTrackingEnabled>0</ChangeTrackingEnabled>
+          <CanChangeTrackingBeEnabled>1</CanChangeTrackingBeEnabled>
+          <IsEnabledForExternalChannels>0</IsEnabledForExternalChannels>
+          <IsMSTeamsIntegrationEnabled>0</IsMSTeamsIntegrationEnabled>
+          <IsSolutionAware>0</IsSolutionAware>
+        </entity>
+      </EntityInfo>
+      <FormXml>
+        <forms type="main">
+          <systemform>
+            <formid>{eec7b906-55ab-438a-9f1e-0ba0a83f086e}</formid>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <FormPresentation>1</FormPresentation>
+            <FormActivationState>1</FormActivationState>
+            <form>
+              <tabs>
+                <tab verticallayout="true" id="{f9b06062-9a62-484f-918d-c31b5e5f7855}" IsUserDefined="1">
+                  <labels>
+                    <label description="Ogólne" languagecode="1045" />
+                  </labels>
+                  <columns>
+                    <column width="100%">
+                      <sections>
+                        <section showlabel="false" showbar="false" IsUserDefined="0" id="{5be43de5-4669-4f88-b116-5861c901c07e}">
+                          <labels>
+                            <label description="Ogólne" languagecode="1045" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell id="{eb61f48d-b6dc-407f-af68-9260452a04b9}">
+                                <labels>
+                                  <label description="Name" languagecode="1045" />
+                                </labels>
+                                <control id="annsar_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="annsar_name" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{adb30f74-0c65-4a17-96af-c82fe4f001b1}">
+                                <labels>
+                                  <label description="Właściciel" languagecode="1045" />
+                                </labels>
+                                <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                      </sections>
+                    </column>
+                  </columns>
+                </tab>
+              </tabs>
+            </form>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>1</CanBeDeleted>
+            <LocalizedNames>
+              <LocalizedName description="Informacje" languagecode="1045" />
+            </LocalizedNames>
+            <Descriptions>
+              <Description description="Formularz tej encji." languagecode="1045" />
+            </Descriptions>
+          </systemform>
+        </forms>
+        <forms type="card">
+          <systemform>
+            <formid>{1d40ca05-970b-4818-a15a-94d23ed17c95}</formid>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <FormPresentation>1</FormPresentation>
+            <FormActivationState>1</FormActivationState>
+            <form>
+              <tabs>
+                <tab name="general" verticallayout="true" id="{b072f764-838a-4e23-adee-babb0dea22b4}" IsUserDefined="0">
+                  <labels>
+                    <label description="" languagecode="1045" />
+                  </labels>
+                  <columns>
+                    <column width="25%">
+                      <sections>
+                        <section name="ColorStrip" showlabel="false" showbar="false" columns="1" IsUserDefined="0" id="{d4f4a36e-1efe-487c-b4b2-91c049f9e385}">
+                          <labels>
+                            <label description="ColorStrip" languagecode="1045" />
+                          </labels>
+                        </section>
+                      </sections>
+                    </column>
+                    <column width="75%">
+                      <sections>
+                        <section name="CardHeader" showlabel="false" showbar="false" columns="111" id="{98dca737-c2b8-418d-815f-eec40c49f1d2}" IsUserDefined="0">
+                          <labels>
+                            <label description="Nagłówek" languagecode="1045" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell id="{f45414b8-cf87-47f2-9db3-078312b84297}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="Przyczyna stanu" languagecode="1045" />
+                                </labels>
+                                <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+                              </cell>
+                              <cell id="{a809624e-6351-4de9-af4f-9db2af495431}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="" languagecode="1045" />
+                                </labels>
+                              </cell>
+                              <cell id="{7d99525a-0f48-40ac-8840-1e2ca866c0ed}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="" languagecode="1045" />
+                                </labels>
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                        <section name="CardDetails" showlabel="false" showbar="false" columns="1" id="{aa90d6dc-c6e6-4316-b867-5f64220392e9}" IsUserDefined="0">
+                          <labels>
+                            <label description="Szczegóły" languagecode="1045" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell id="{be1bf2af-c3f3-4db2-8394-4fb7b40513b5}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="Name" languagecode="1045" />
+                                </labels>
+                                <control id="annsar_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="annsar_name" disabled="false" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                        <section name="CardFooter" showlabel="false" columns="1111" showbar="false" id="{a623c159-f769-4461-85ee-51cd32249994}" IsUserDefined="0">
+                          <labels>
+                            <label description="Stopka" languagecode="1045" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell id="{1ddf0b9a-f955-4ba5-95a1-e5b776002e9f}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="Właściciel" languagecode="1045" />
+                                </labels>
+                                <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                              </cell>
+                              <cell id="{3b72b5e3-b428-43a0-a664-d65c76a40754}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="Data utworzenia" languagecode="1045" />
+                                </labels>
+                                <control id="createdon" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdon" disabled="false" />
+                              </cell>
+                              <cell id="{bc7850d4-20d5-468b-8493-621982f0e3be}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="" languagecode="1045" />
+                                </labels>
+                              </cell>
+                              <cell id="{2c6cffa7-387a-4995-ab88-2ab37619c1d9}" showlabel="true" locklevel="0">
+                                <labels>
+                                  <label description="" languagecode="1045" />
+                                </labels>
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                      </sections>
+                    </column>
+                  </columns>
+                </tab>
+              </tabs>
+            </form>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>1</CanBeDeleted>
+            <LocalizedNames>
+              <LocalizedName description="Informacje" languagecode="1045" />
+            </LocalizedNames>
+            <Descriptions>
+              <Description description="Formularz karty tej encji." languagecode="1045" />
+            </Descriptions>
+          </systemform>
+        </forms>
+        <forms type="quick">
+          <systemform>
+            <formid>{20eb93d2-14ab-4c22-b8a1-1dd5f257bb2b}</formid>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <FormPresentation>1</FormPresentation>
+            <FormActivationState>1</FormActivationState>
+            <form>
+              <tabs>
+                <tab verticallayout="true" id="{02a5678c-19ee-4ecc-94db-82acb4b8bca1}" IsUserDefined="1">
+                  <labels>
+                    <label description="" languagecode="1045" />
+                  </labels>
+                  <columns>
+                    <column width="100%">
+                      <sections>
+                        <section showlabel="false" showbar="false" IsUserDefined="0" id="{c1c162e3-fcb4-4701-9bf0-977e1aa3d6e0}">
+                          <labels>
+                            <label description="OGÓLNE" languagecode="1045" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell id="{9debdd4b-a73a-4cf7-9a4d-b32e00903934}">
+                                <labels>
+                                  <label description="Name" languagecode="1045" />
+                                </labels>
+                                <control id="annsar_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="annsar_name" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{ac7fc816-efff-4fd0-88b8-8353d80e69a3}">
+                                <labels>
+                                  <label description="Właściciel" languagecode="1045" />
+                                </labels>
+                                <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                      </sections>
+                    </column>
+                  </columns>
+                </tab>
+              </tabs>
+            </form>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>1</CanBeDeleted>
+            <LocalizedNames>
+              <LocalizedName description="Informacje" languagecode="1045" />
+            </LocalizedNames>
+          </systemform>
+        </forms>
+      </FormXml>
+      <SavedQueries>
+        <savedqueries>
+          <savedquery>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>0</CanBeDeleted>
+            <isquickfindquery>0</isquickfindquery>
+            <isprivate>0</isprivate>
+            <isdefault>1</isdefault>
+            <savedqueryid>{9d7f13f8-f534-425f-a7c1-e485e7e7b5e5}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" jump="annsar_name" select="1" icon="1" preview="1">
+                <row name="result" id="annsar_kategoryzacjaaiid">
+                  <cell name="annsar_name" width="300" />
+                  <cell name="createdon" width="125" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype>0</querytype>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="annsar_kategoryzacjaai">
+                  <attribute name="annsar_kategoryzacjaaiid" />
+                  <attribute name="annsar_name" />
+                  <attribute name="createdon" />
+                  <order attribute="annsar_name" descending="false" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="0" />
+                  </filter>
+                </entity>
+              </fetch>
+            </fetchxml>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <LocalizedNames>
+              <LocalizedName description="Aktywne KategoryzacjaAI" languagecode="1045" />
+            </LocalizedNames>
+          </savedquery>
+          <savedquery>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>0</CanBeDeleted>
+            <isquickfindquery>0</isquickfindquery>
+            <isprivate>0</isprivate>
+            <isdefault>1</isdefault>
+            <savedqueryid>{5ff4d29d-8fd6-4d4f-852a-d13b79adff6a}</savedqueryid>
+            <layoutxml>
+              <grid name="annsar_kategoryzacjaais" jump="annsar_name" select="1" icon="1" preview="1">
+                <row name="annsar_kategoryzacjaai" id="annsar_kategoryzacjaaiid">
+                  <cell name="annsar_name" width="300" />
+                  <cell name="createdon" width="125" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype>2</querytype>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="annsar_kategoryzacjaai">
+                  <attribute name="annsar_kategoryzacjaaiid" />
+                  <attribute name="annsar_name" />
+                  <attribute name="createdon" />
+                  <order attribute="annsar_name" descending="false" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="0" />
+                  </filter>
+                </entity>
+              </fetch>
+            </fetchxml>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <LocalizedNames>
+              <LocalizedName description="Kategoryzacja AI - widok skojarzony" languagecode="1045" />
+            </LocalizedNames>
+          </savedquery>
+          <savedquery>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>0</CanBeDeleted>
+            <isquickfindquery>0</isquickfindquery>
+            <isprivate>0</isprivate>
+            <isdefault>1</isdefault>
+            <savedqueryid>{c9cf41a6-c014-432d-8a1e-2074550ca2c5}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" jump="annsar_name" select="1" icon="1" preview="1">
+                <row name="result" id="annsar_kategoryzacjaaiid">
+                  <cell name="annsar_name" width="300" />
+                  <cell name="createdon" width="125" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype>1</querytype>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="annsar_kategoryzacjaai">
+                  <attribute name="annsar_kategoryzacjaaiid" />
+                  <attribute name="annsar_name" />
+                  <attribute name="createdon" />
+                  <order attribute="annsar_name" descending="false" />
+                </entity>
+              </fetch>
+            </fetchxml>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <LocalizedNames>
+              <LocalizedName description="Kategoryzacja AI - widok szukania zaawansowanego" languagecode="1045" />
+            </LocalizedNames>
+          </savedquery>
+          <savedquery>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>0</CanBeDeleted>
+            <isquickfindquery>0</isquickfindquery>
+            <isprivate>0</isprivate>
+            <isdefault>1</isdefault>
+            <savedqueryid>{32112c03-bcff-4b0a-b3fa-29443d661b91}</savedqueryid>
+            <layoutxml>
+              <grid name="annsar_kategoryzacjaais" jump="annsar_name" select="1" icon="1" preview="0">
+                <row name="annsar_kategoryzacjaai" id="annsar_kategoryzacjaaiid">
+                  <cell name="annsar_name" width="300" />
+                  <cell name="createdon" width="125" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype>64</querytype>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="annsar_kategoryzacjaai">
+                  <attribute name="annsar_kategoryzacjaaiid" />
+                  <attribute name="annsar_name" />
+                  <attribute name="createdon" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="0" />
+                  </filter>
+                </entity>
+              </fetch>
+            </fetchxml>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <LocalizedNames>
+              <LocalizedName description="Kategoryzacja AI - widok wyszukiwania" languagecode="1045" />
+            </LocalizedNames>
+          </savedquery>
+          <savedquery>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>1</CanBeDeleted>
+            <isquickfindquery>0</isquickfindquery>
+            <isprivate>0</isprivate>
+            <isdefault>1</isdefault>
+            <savedqueryid>{369076db-071a-ef11-840b-000d3aad8277}</savedqueryid>
+            <querytype>8192</querytype>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical" output-format="xml-platform">
+                <entity name="annsar_kategoryzacjaai">
+                  <attribute name="annsar_kategoryzacjaaiid" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="0" />
+                    <condition attribute="ownerid" operator="eq-userid" />
+                  </filter>
+                </entity>
+              </fetch>
+            </fetchxml>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <LocalizedNames>
+              <LocalizedName description="Moje KategoryzacjaAI" languagecode="1045" />
+            </LocalizedNames>
+            <Descriptions>
+              <Description description="Aktywne KategoryzacjaAI należące do mnie" languagecode="1045" />
+            </Descriptions>
+          </savedquery>
+          <savedquery>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>0</CanBeDeleted>
+            <isquickfindquery>0</isquickfindquery>
+            <isprivate>0</isprivate>
+            <isdefault>0</isdefault>
+            <savedqueryid>{39584fef-4b11-49a5-ba1c-6a6bad74de8d}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" jump="annsar_name" select="1" icon="1" preview="1">
+                <row name="result" id="annsar_kategoryzacjaaiid">
+                  <cell name="annsar_name" width="300" />
+                  <cell name="createdon" width="125" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype>0</querytype>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="annsar_kategoryzacjaai">
+                  <attribute name="annsar_kategoryzacjaaiid" />
+                  <attribute name="annsar_name" />
+                  <attribute name="createdon" />
+                  <order attribute="annsar_name" descending="false" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="1" />
+                  </filter>
+                </entity>
+              </fetch>
+            </fetchxml>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <LocalizedNames>
+              <LocalizedName description="Nieaktywne KategoryzacjaAI" languagecode="1045" />
+            </LocalizedNames>
+          </savedquery>
+          <savedquery>
+            <IsCustomizable>1</IsCustomizable>
+            <CanBeDeleted>0</CanBeDeleted>
+            <isquickfindquery>1</isquickfindquery>
+            <isprivate>0</isprivate>
+            <isdefault>1</isdefault>
+            <savedqueryid>{0212a05e-2322-457e-acb0-7b644e1cc9fe}</savedqueryid>
+            <layoutxml>
+              <grid name="resultset" jump="annsar_name" select="1" icon="1" preview="1">
+                <row name="result" id="annsar_kategoryzacjaaiid">
+                  <cell name="annsar_name" width="300" />
+                  <cell name="createdon" width="125" />
+                </row>
+              </grid>
+            </layoutxml>
+            <querytype>4</querytype>
+            <fetchxml>
+              <fetch version="1.0" mapping="logical">
+                <entity name="annsar_kategoryzacjaai">
+                  <attribute name="annsar_kategoryzacjaaiid" />
+                  <attribute name="annsar_name" />
+                  <attribute name="createdon" />
+                  <order attribute="annsar_name" descending="false" />
+                  <filter type="and">
+                    <condition attribute="statecode" operator="eq" value="0" />
+                  </filter>
+                  <filter type="or" isquickfindfields="1">
+                    <condition attribute="annsar_name" operator="like" value="{0}" />
+                  </filter>
+                </entity>
+              </fetch>
+            </fetchxml>
+            <IntroducedVersion>1.0</IntroducedVersion>
+            <LocalizedNames>
+              <LocalizedName description="Szybkie szukanie aktywnych elementów KategoryzacjaAI" languagecode="1045" />
+            </LocalizedNames>
+          </savedquery>
+        </savedqueries>
+      </SavedQueries>
+      <RibbonDiffXml>
+        <CustomActions />
+        <Templates>
+          <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+        </Templates>
+        <CommandDefinitions />
+        <RuleDefinitions>
+          <TabDisplayRules />
+          <DisplayRules />
+          <EnableRules />
+        </RuleDefinitions>
+        <LocLabels />
+      </RibbonDiffXml>
+    </Entity>
+  </Entities>
+  <Roles></Roles>
+  <Workflows>
+    <Workflow WorkflowId="{c985865d-111a-ef11-840a-6045bd884b98}" Name="Flow | Kategoryzacja AI">
+      <JsonFileName>/Workflows/FlowKategoryzacjaAI-C985865D-111A-EF11-840A-6045BD884B98.json</JsonFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>5</Category>
+      <Mode>0</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.0</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <PrimaryEntity>none</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1045" description="Flow | Kategoryzacja AI" />
+      </LocalizedNames>
+    </Workflow>
+  </Workflows>
+  <FieldSecurityProfiles></FieldSecurityProfiles>
+  <Templates />
+  <EntityMaps />
+  <EntityRelationships>
+    <EntityRelationship Name="business_unit_annsar_kategoryzacjaai">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>annsar_KategoryzacjaAI</ReferencingEntityName>
+      <ReferencedEntityName>BusinessUnit</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>Restrict</CascadeDelete>
+      <CascadeArchive>Restrict</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <ReferencingAttributeName>OwningBusinessUnit</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="Unikatowy identyfikator jednostki biznesowej, która jest właścicielem rekordu" languagecode="1045" />
+        </Descriptions>
+      </RelationshipDescription>
+    </EntityRelationship>
+    <EntityRelationship Name="lk_annsar_kategoryzacjaai_createdby">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>annsar_KategoryzacjaAI</ReferencingEntityName>
+      <ReferencedEntityName>SystemUser</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>NoCascade</CascadeDelete>
+      <CascadeArchive>NoCascade</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <ReferencingAttributeName>CreatedBy</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="Unikatowy identyfikator użytkownika, który utworzył rekord." languagecode="1045" />
+        </Descriptions>
+      </RelationshipDescription>
+    </EntityRelationship>
+    <EntityRelationship Name="lk_annsar_kategoryzacjaai_modifiedby">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>annsar_KategoryzacjaAI</ReferencingEntityName>
+      <ReferencedEntityName>SystemUser</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>NoCascade</CascadeDelete>
+      <CascadeArchive>NoCascade</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <ReferencingAttributeName>ModifiedBy</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="Unikatowy identyfikator użytkownika, który zmodyfikował rekord." languagecode="1045" />
+        </Descriptions>
+      </RelationshipDescription>
+    </EntityRelationship>
+    <EntityRelationship Name="owner_annsar_kategoryzacjaai">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>annsar_KategoryzacjaAI</ReferencingEntityName>
+      <ReferencedEntityName>Owner</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>NoCascade</CascadeDelete>
+      <CascadeArchive>NoCascade</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <ReferencingAttributeName>OwnerId</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="Identyfikator właściciela" languagecode="1045" />
+        </Descriptions>
+      </RelationshipDescription>
+    </EntityRelationship>
+    <EntityRelationship Name="team_annsar_kategoryzacjaai">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>annsar_KategoryzacjaAI</ReferencingEntityName>
+      <ReferencedEntityName>Team</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>NoCascade</CascadeDelete>
+      <CascadeArchive>NoCascade</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <ReferencingAttributeName>OwningTeam</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="Unikatowy identyfikator zespołu, który jest właścicielem rekordu." languagecode="1045" />
+        </Descriptions>
+      </RelationshipDescription>
+    </EntityRelationship>
+    <EntityRelationship Name="user_annsar_kategoryzacjaai">
+      <EntityRelationshipType>OneToMany</EntityRelationshipType>
+      <IsCustomizable>1</IsCustomizable>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <IsHierarchical>0</IsHierarchical>
+      <ReferencingEntityName>annsar_KategoryzacjaAI</ReferencingEntityName>
+      <ReferencedEntityName>SystemUser</ReferencedEntityName>
+      <CascadeAssign>NoCascade</CascadeAssign>
+      <CascadeDelete>NoCascade</CascadeDelete>
+      <CascadeArchive>NoCascade</CascadeArchive>
+      <CascadeReparent>NoCascade</CascadeReparent>
+      <CascadeShare>NoCascade</CascadeShare>
+      <CascadeUnshare>NoCascade</CascadeUnshare>
+      <ReferencingAttributeName>OwningUser</ReferencingAttributeName>
+      <RelationshipDescription>
+        <Descriptions>
+          <Description description="Unikatowy identyfikator użytkownika, który jest właścicielem rekordu." languagecode="1045" />
+        </Descriptions>
+      </RelationshipDescription>
+    </EntityRelationship>
+  </EntityRelationships>
+  <OrganizationSettings />
+  <optionsets />
+  <CustomControls />
+  <EntityDataProviders />
+  <CanvasApps>
+    <CanvasApp>
+      <Name>annsar_kategoryzacjaai_70cba</Name>
+      <AppVersion>2024-05-25T11:40:33Z</AppVersion>
+      <Status>Ready</Status>
+      <CreatedByClientVersion>3.24051.23.0</CreatedByClientVersion>
+      <MinClientVersion>3.24051.23.0</MinClientVersion>
+      <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.24051.23","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","sienaVersion":"20240525T002250Z-3.24051.23.0"}</Tags>
+      <IsCdsUpgraded>0</IsCdsUpgraded>
+      <GalleryItemId xsi:nil="true"></GalleryItemId>
+      <BackgroundColor>rgba(0, 134, 208, 1)</BackgroundColor>
+      <DisplayName>Kategoryzacja AI</DisplayName>
+      <Description></Description>
+      <CommitMessage></CommitMessage>
+      <Publisher></Publisher>
+      <AuthorizationReferences>[]</AuthorizationReferences>
+      <ConnectionReferences>{"e26b7a70-df99-4412-9bd5-3d5fb1b1159e":{"id":"/providers/microsoft.powerapps/apis/shared_sharepointonline","displayName":"SharePoint","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1685/1.0.1685.3700/sharepointonline/icon.png","dataSources":["Kategoryzacja"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{"https://utpedupl.sharepoint.com/sites/KategoryzacjaAI":{"dataSources":{"Kategoryzacja":{"tableName":"ae843e04-6b0f-400b-b0f1-ee6099b0b2c9"}}}},"apiTier":"Standard","actions":["providers/PowerPlatform.Governance/Operations/Read"]},"11d903b4-8233-4153-aba3-59b08c6d94b1":{"id":"/providers/microsoft.powerapps/apis/shared_logicflows","displayName":"Przepływy logiki","iconUri":"https://connectoricons-prod.azureedge.net/u/patelronak/specialtrain-logicflows-2/1.0.1692.3734/logicflows/icon.png","dataSources":["Flow|KategoryzacjaAI"],"dependencies":["9d25d693-c4b4-4ee7-8997-742819ed715c","c3257463-4a38-4316-8f31-38d59342a3ab","d0580be0-54a5-4ae3-be84-1d1c94f2f2a1"],"dependents":[],"parameterHints":{"workflowName":{"value":"2650f988-9d8c-4ae7-aa7a-b534edcc2d62"},"workflowEntityId":{"value":"c985865d-111a-ef11-840a-6045bd884b98"},"workflowDisplayName":{"value":"Flow | Kategoryzacja AI"},"9d25d693-c4b4-4ee7-8997-742819ed715c":{"value":"shared_commondataserviceforapps_1"},"c3257463-4a38-4316-8f31-38d59342a3ab":{"value":"shared_sharepointonline"},"d0580be0-54a5-4ae3-be84-1d1c94f2f2a1":{"value":"shared_commondataserviceforapps"}},"parameterHintsV2":{"workflowName":{"value":"2650f988-9d8c-4ae7-aa7a-b534edcc2d62"},"workflowEntityId":{"value":"c985865d-111a-ef11-840a-6045bd884b98"},"workflowDisplayName":{"value":"Flow | Kategoryzacja AI"},"shared_commondataserviceforapps_1":{"value":"9d25d693-c4b4-4ee7-8997-742819ed715c"},"shared_sharepointonline":{"value":"c3257463-4a38-4316-8f31-38d59342a3ab"},"shared_commondataserviceforapps":{"value":"d0580be0-54a5-4ae3-be84-1d1c94f2f2a1"}},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["Run"]},"9d25d693-c4b4-4ee7-8997-742819ed715c":{"id":"/providers/microsoft.powerapps/apis/shared_commondataserviceforapps","displayName":"Microsoft Dataverse","iconUri":"https://connectoricons-prod.azureedge.net/u/dannylevy/fastTrack/Commondataserviceforapps/1.0.1694.3756/commondataserviceforapps/icon.png","dataSources":[],"dependencies":[],"dependents":["11d903b4-8233-4153-aba3-59b08c6d94b1"],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Premium"},"c3257463-4a38-4316-8f31-38d59342a3ab":{"id":"/providers/microsoft.powerapps/apis/shared_sharepointonline","displayName":"SharePoint","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1685/1.0.1685.3700/sharepointonline/icon.png","dataSources":[],"dependencies":[],"dependents":["11d903b4-8233-4153-aba3-59b08c6d94b1"],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"},"d0580be0-54a5-4ae3-be84-1d1c94f2f2a1":{"id":"/providers/microsoft.powerapps/apis/shared_commondataserviceforapps","displayName":"Microsoft Dataverse","iconUri":"https://connectoricons-prod.azureedge.net/u/dannylevy/fastTrack/Commondataserviceforapps/1.0.1694.3756/commondataserviceforapps/icon.png","dataSources":[],"dependencies":[],"dependents":["11d903b4-8233-4153-aba3-59b08c6d94b1"],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Premium"}}</ConnectionReferences>
+      <DatabaseReferences>{}</DatabaseReferences>
+      <AppComponents>[]</AppComponents>
+      <AppComponentDependencies>[]</AppComponentDependencies>
+      <CanConsumeAppPass>1</CanConsumeAppPass>
+      <CanvasAppType>0</CanvasAppType>
+      <BypassConsent>0</BypassConsent>
+      <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <CdsDependencies>{"cdsdependencies":[]}</CdsDependencies>
+      <IsCustomizable>1</IsCustomizable>
+      <BackgroundImageUri>/CanvasApps/annsar_kategoryzacjaai_70cba_BackgroundImageUri</BackgroundImageUri>
+      <DocumentUri>/CanvasApps/annsar_kategoryzacjaai_70cba_DocumentUri.msapp</DocumentUri>
+      <AdditionalUris>
+        <AdditionalUri>/CanvasApps/annsar_kategoryzacjaai_70cba_AdditionalUris0_identity.json</AdditionalUri>
+      </AdditionalUris>
+    </CanvasApp>
+  </CanvasApps>
+  <AIModels>
+    <AIModel>
+      <msdyn_aimodelid>{89945276-b909-4552-984b-c831ba337751}</msdyn_aimodelid>
+      <msdyn_name>Category Classification 24.05.2024, 18:57:17</msdyn_name>
+      <msdyn_templateid>{7884636f-37c0-46ed-8e8c-add952fe5ebf}</msdyn_templateid>
+      <statecode>1</statecode>
+      <statuscode>1</statuscode>
+      <IsCustomizable>1</IsCustomizable>
+      <msdyn_activerunconfigurationid>{9913b9fa-221a-ef11-840a-6045bd884b98}</msdyn_activerunconfigurationid>
+      <AIConfigurations>
+        <AIConfiguration>
+          <msdyn_aiconfigurationid>{9913b9fa-221a-ef11-840a-6045bd884b98}</msdyn_aiconfigurationid>
+          <msdyn_databinding>{"schemaVersion":2,"input":{"schemaName":"annsar_kategoryzacjaai","attributes":[{"specificationName":"text","schemaName":"annsar_text","requiredLevel":"ApplicationRequired"},{"specificationName":"id","schemaName":"annsar_kategoryzacjaaiid","requiredLevel":"ApplicationRequired"}]},"output":{"relatedEntities":[{"specificationName":"results","schemaName":"new_tc_89945276_b909_4552_984b_c831ba337751","displayName":"CategoryClassification240520241_Results","attributes":[{"schemaName":"new_tags","specificationName":"type"},{"schemaName":"new_confidence_Level","specificationName":"score"}]}]}}</msdyn_databinding>
+          <msdyn_majoriterationnumber>3</msdyn_majoriterationnumber>
+          <msdyn_minoriterationnumber>0</msdyn_minoriterationnumber>
+          <msdyn_modeldata>18bcba9f-221a-ef11-840a-6045bd884b98</msdyn_modeldata>
+          <msdyn_modelperformance>{"metrics":[{"isGlobalScore":true,"name":"weightedF1","value":0.9244444370269775,"type":"Percentage"},{"isGlobalScore":false,"name":"macroF1","value":0.8999999761581421,"type":"Percentage"},{"isGlobalScore":false,"name":"accuracy","value":0.9333333373069763,"type":"Percentage"}],"details":[{"id":"Finance","category":"tag","metrics":[{"name":"numberOfCasesTotal","value":10,"type":"Numerical"},{"name":"numberOfCasesTestSet","value":3,"type":"Numerical"},{"name":"f1Score","value":1.0,"type":"Percentage"},{"name":"precision","value":1.0,"type":"Percentage"},{"name":"recall","value":1.0,"type":"Percentage"},{"name":"accuracy","value":1.0,"type":"Percentage"},{"name":"acuracyBaseline","value":0.800000011920929,"type":"Percentage"},{"name":"f1ScoreBaseline","value":0.3333333134651184,"type":"Percentage"},{"name":"cohenKappa","value":1.0,"type":"Percentage"},{"name":"grade","value":3,"type":"Numerical"},{"name":"numberOfFalsePositives","value":0,"type":"Numerical"},{"name":"falsePositiveTrueLabelDistribution","value":{},"type":"DictionaryPercentageList"},{"name":"numberOfFalseNegatives","value":0,"type":"Numerical"},{"name":"falseNegativePredictedLabelDistribution","value":{},"type":"DictionaryPercentageList"}]},{"id":"IT","category":"tag","metrics":[{"name":"numberOfCasesTotal","value":10,"type":"Numerical"},{"name":"numberOfCasesTestSet","value":2,"type":"Numerical"},{"name":"f1Score","value":0.6666666865348816,"type":"Percentage"},{"name":"precision","value":1.0,"type":"Percentage"},{"name":"recall","value":0.5,"type":"Percentage"},{"name":"accuracy","value":0.9333333373069763,"type":"Percentage"},{"name":"acuracyBaseline","value":0.8666666746139526,"type":"Percentage"},{"name":"f1ScoreBaseline","value":0.2352941334247589,"type":"Percentage"},{"name":"cohenKappa","value":0.6341462731361389,"type":"Percentage"},{"name":"grade","value":3,"type":"Numerical"},{"name":"numberOfFalsePositives","value":0,"type":"Numerical"},{"name":"falsePositiveTrueLabelDistribution","value":{},"type":"DictionaryPercentageList"},{"name":"numberOfFalseNegatives","value":1,"type":"Numerical"},{"name":"falseNegativePredictedLabelDistribution","value":{"Legal":1.0},"type":"DictionaryPercentageList"}]},{"id":"Legal","category":"tag","metrics":[{"name":"numberOfCasesTotal","value":15,"type":"Numerical"},{"name":"numberOfCasesTestSet","value":7,"type":"Numerical"},{"name":"f1Score","value":0.9333333373069763,"type":"Percentage"},{"name":"precision","value":0.875,"type":"Percentage"},{"name":"recall","value":1.0,"type":"Percentage"},{"name":"accuracy","value":0.9333333373069763,"type":"Percentage"},{"name":"acuracyBaseline","value":0.5333333015441895,"type":"Percentage"},{"name":"f1ScoreBaseline","value":0.6363636255264282,"type":"Percentage"},{"name":"cohenKappa","value":0.8672566413879395,"type":"Percentage"},{"name":"grade","value":3,"type":"Numerical"},{"name":"numberOfFalsePositives","value":1,"type":"Numerical"},{"name":"falsePositiveTrueLabelDistribution","value":{"IT":1.0},"type":"DictionaryPercentageList"},{"name":"numberOfFalseNegatives","value":0,"type":"Numerical"},{"name":"falseNegativePredictedLabelDistribution","value":{},"type":"DictionaryPercentageList"}]},{"id":"Sales &amp; Marketing","category":"tag","metrics":[{"name":"numberOfCasesTotal","value":11,"type":"Numerical"},{"name":"numberOfCasesTestSet","value":3,"type":"Numerical"},{"name":"f1Score","value":1.0,"type":"Percentage"},{"name":"precision","value":1.0,"type":"Percentage"},{"name":"recall","value":1.0,"type":"Percentage"},{"name":"accuracy","value":1.0,"type":"Percentage"},{"name":"acuracyBaseline","value":0.800000011920929,"type":"Percentage"},{"name":"f1ScoreBaseline","value":0.3333333134651184,"type":"Percentage"},{"name":"cohenKappa","value":1.0,"type":"Percentage"},{"name":"grade","value":3,"type":"Numerical"},{"name":"numberOfFalsePositives","value":0,"type":"Numerical"},{"name":"falsePositiveTrueLabelDistribution","value":{},"type":"DictionaryPercentageList"},{"name":"numberOfFalseNegatives","value":0,"type":"Numerical"},{"name":"falseNegativePredictedLabelDistribution","value":{},"type":"DictionaryPercentageList"}]}]}</msdyn_modelperformance>
+          <msdyn_name>89945276-b909-4552-984b-c831ba337751_2024-05-24T23:11:46.104Z</msdyn_name>
+          <msdyn_modelrundataspecification>
+        {
+          "SpecFormatVersion": 1,
+          "InputRootEntity": {
+            "DisplayName": "",
+            "Attributes": {
+              "text": { "Type": "String", "DisplayName": "Text" },
+              "language": { "Type": "String", "DisplayName": "Language" }
+            }
+          },
+          "OutputRootEntity": {
+            "DisplayName": "",
+            "Attributes": {
+              "results": {
+                "Type": "Array",
+                "Entity": {
+                  "DisplayName": "",
+                  "Attributes": {
+                    "type": { "Type": "String", "DisplayName": "Type" },
+                    "score": { "Type": "Real", "DisplayName": "Confidence" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      </msdyn_modelrundataspecification>
+          <msdyn_schedulingoptions>{"schemaVersion":2,"prediction":{"recurrence":{"frequency":"Minutely","interval":1}}}</msdyn_schedulingoptions>
+          <msdyn_type>190690001</msdyn_type>
+          <msdyn_aimodelid>{89945276-b909-4552-984b-c831ba337751}</msdyn_aimodelid>
+          <msdyn_trainedmodelaiconfigurationpareid>{9813f8e9-afc7-4016-9a20-6ef456582472}</msdyn_trainedmodelaiconfigurationpareid>
+          <statecode>2</statecode>
+          <statuscode>7</statuscode>
+          <IsCustomizable>1</IsCustomizable>
+          <msdyn_templateversion>1</msdyn_templateversion>
+        </AIConfiguration>
+        <AIConfiguration>
+          <msdyn_aiconfigurationid>{9813f8e9-afc7-4016-9a20-6ef456582472}</msdyn_aiconfigurationid>
+          <msdyn_customconfiguration>{"language":"en","separator":"","version":"TextClassification-1"}</msdyn_customconfiguration>
+          <msdyn_databinding>{"schemaVersion":2,"input":{"schemaName":"annsar_kategoryzacjaai","attributes":[{"specificationName":"text","schemaName":"annsar_text","requiredLevel":"ApplicationRequired"},{"specificationName":"tags","schemaName":"annsar_name","requiredLevel":"ApplicationRequired"},{"specificationName":"id","schemaName":"annsar_kategoryzacjaaiid","requiredLevel":"ApplicationRequired"}]}}</msdyn_databinding>
+          <msdyn_majoriterationnumber>3</msdyn_majoriterationnumber>
+          <msdyn_minoriterationnumber>0</msdyn_minoriterationnumber>
+          <msdyn_modeldata></msdyn_modeldata>
+          <msdyn_modelperformance>{"metrics":[{"isGlobalScore":true,"name":"weightedF1","value":0.9244444370269775,"type":"Percentage"},{"isGlobalScore":false,"name":"macroF1","value":0.8999999761581421,"type":"Percentage"},{"isGlobalScore":false,"name":"accuracy","value":0.9333333373069763,"type":"Percentage"}],"details":[{"id":"Finance","category":"tag","metrics":[{"name":"numberOfCasesTotal","value":10,"type":"Numerical"},{"name":"numberOfCasesTestSet","value":3,"type":"Numerical"},{"name":"f1Score","value":1.0,"type":"Percentage"},{"name":"precision","value":1.0,"type":"Percentage"},{"name":"recall","value":1.0,"type":"Percentage"},{"name":"accuracy","value":1.0,"type":"Percentage"},{"name":"acuracyBaseline","value":0.800000011920929,"type":"Percentage"},{"name":"f1ScoreBaseline","value":0.3333333134651184,"type":"Percentage"},{"name":"cohenKappa","value":1.0,"type":"Percentage"},{"name":"grade","value":3,"type":"Numerical"},{"name":"numberOfFalsePositives","value":0,"type":"Numerical"},{"name":"falsePositiveTrueLabelDistribution","value":{},"type":"DictionaryPercentageList"},{"name":"numberOfFalseNegatives","value":0,"type":"Numerical"},{"name":"falseNegativePredictedLabelDistribution","value":{},"type":"DictionaryPercentageList"}]},{"id":"IT","category":"tag","metrics":[{"name":"numberOfCasesTotal","value":10,"type":"Numerical"},{"name":"numberOfCasesTestSet","value":2,"type":"Numerical"},{"name":"f1Score","value":0.6666666865348816,"type":"Percentage"},{"name":"precision","value":1.0,"type":"Percentage"},{"name":"recall","value":0.5,"type":"Percentage"},{"name":"accuracy","value":0.9333333373069763,"type":"Percentage"},{"name":"acuracyBaseline","value":0.8666666746139526,"type":"Percentage"},{"name":"f1ScoreBaseline","value":0.2352941334247589,"type":"Percentage"},{"name":"cohenKappa","value":0.6341462731361389,"type":"Percentage"},{"name":"grade","value":3,"type":"Numerical"},{"name":"numberOfFalsePositives","value":0,"type":"Numerical"},{"name":"falsePositiveTrueLabelDistribution","value":{},"type":"DictionaryPercentageList"},{"name":"numberOfFalseNegatives","value":1,"type":"Numerical"},{"name":"falseNegativePredictedLabelDistribution","value":{"Legal":1.0},"type":"DictionaryPercentageList"}]},{"id":"Legal","category":"tag","metrics":[{"name":"numberOfCasesTotal","value":15,"type":"Numerical"},{"name":"numberOfCasesTestSet","value":7,"type":"Numerical"},{"name":"f1Score","value":0.9333333373069763,"type":"Percentage"},{"name":"precision","value":0.875,"type":"Percentage"},{"name":"recall","value":1.0,"type":"Percentage"},{"name":"accuracy","value":0.9333333373069763,"type":"Percentage"},{"name":"acuracyBaseline","value":0.5333333015441895,"type":"Percentage"},{"name":"f1ScoreBaseline","value":0.6363636255264282,"type":"Percentage"},{"name":"cohenKappa","value":0.8672566413879395,"type":"Percentage"},{"name":"grade","value":3,"type":"Numerical"},{"name":"numberOfFalsePositives","value":1,"type":"Numerical"},{"name":"falsePositiveTrueLabelDistribution","value":{"IT":1.0},"type":"DictionaryPercentageList"},{"name":"numberOfFalseNegatives","value":0,"type":"Numerical"},{"name":"falseNegativePredictedLabelDistribution","value":{},"type":"DictionaryPercentageList"}]},{"id":"Sales &amp; Marketing","category":"tag","metrics":[{"name":"numberOfCasesTotal","value":11,"type":"Numerical"},{"name":"numberOfCasesTestSet","value":3,"type":"Numerical"},{"name":"f1Score","value":1.0,"type":"Percentage"},{"name":"precision","value":1.0,"type":"Percentage"},{"name":"recall","value":1.0,"type":"Percentage"},{"name":"accuracy","value":1.0,"type":"Percentage"},{"name":"acuracyBaseline","value":0.800000011920929,"type":"Percentage"},{"name":"f1ScoreBaseline","value":0.3333333134651184,"type":"Percentage"},{"name":"cohenKappa","value":1.0,"type":"Percentage"},{"name":"grade","value":3,"type":"Numerical"},{"name":"numberOfFalsePositives","value":0,"type":"Numerical"},{"name":"falsePositiveTrueLabelDistribution","value":{},"type":"DictionaryPercentageList"},{"name":"numberOfFalseNegatives","value":0,"type":"Numerical"},{"name":"falseNegativePredictedLabelDistribution","value":{},"type":"DictionaryPercentageList"}]}]}</msdyn_modelperformance>
+          <msdyn_name>89945276-b909-4552-984b-c831ba337751_2024-05-24T23:08:43.790Z</msdyn_name>
+          <msdyn_modelrundataspecification>
+        {
+          "SpecFormatVersion": 1,
+          "InputRootEntity": {
+            "DisplayName": "Text",
+            "Attributes": {
+              "id": { "Type": "String" },
+              "text": { "Type": "String" },
+              "tags": { "Type": "String" }
+            }
+          }
+        }
+      </msdyn_modelrundataspecification>
+          <msdyn_type>190690000</msdyn_type>
+          <msdyn_aimodelid>{89945276-b909-4552-984b-c831ba337751}</msdyn_aimodelid>
+          <msdyn_lasttrainorrundate>2024-05-24T23:09:32</msdyn_lasttrainorrundate>
+          <statecode>2</statecode>
+          <statuscode>6</statuscode>
+          <IsCustomizable>1</IsCustomizable>
+          <msdyn_templateversion>1</msdyn_templateversion>
+        </AIConfiguration>
+      </AIConfigurations>
+    </AIModel>
+  </AIModels>
+  <connectionreferences>
+    <connectionreference connectionreferencelogicalname="annsar_sharedcommondataserviceforapps_3e609">
+      <connectionreferencedisplayname>Microsoft Dataverse KategoryzacjaAI-3e609</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="annsar_sharedcommondataserviceforapps_5fafb">
+      <connectionreferencedisplayname>Microsoft Dataverse KategoryzacjaAI-5fafb</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="annsar_sharedonedriveforbusiness_57100">
+      <connectionreferencedisplayname>OneDrive dla Firm KategoryzacjaAI-57100</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_onedriveforbusiness</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="annsar_sharedsharepointonline_48af0">
+      <connectionreferencedisplayname>SharePoint KategoryzacjaAI-48af0</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_sharepointonline</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <promptingbehavior>0</promptingbehavior>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+  </connectionreferences>
+  <Languages>
+    <Language>1045</Language>
+  </Languages>
+</ImportExportXml>
